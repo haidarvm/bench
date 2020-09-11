@@ -4,6 +4,7 @@ namespace app\controller;
 
 use support\Request;
 use support\Db;
+use ActiveRecord\ActiveDatabase;
 
 
 class Pg {
@@ -22,6 +23,31 @@ class Pg {
             return false;
         }
         return $query ;
+    }
+
+    public function active() {
+        // Create Database configs
+        $db_config = [
+            'dsn'	=> '',
+            'hostname' => 'localhost',
+            'username' => 'postgres',
+            'password' => 'hai2coders',
+            'database' => 'stack',
+            'dbdriver' => 'postgre',
+            'pconnect' => false,
+            'db_debug' => true
+        ];
+
+        // Add Config and give it a name
+        ActiveDatabase::addConfig('pg', $db_config);
+        $db = ActiveDatabase::get('pg');
+        //Use the named connection
+        $number = rand(1, 382745);
+        // $db->limit(1);
+        $db->join('PostsId', 'Posts.Id = PostsId.post_id', 'inner');
+        $query = $db->get_where('Posts', ['autoid' => $number]);
+        $row = $query->row_array();
+        return json($row['Body']);
     }
 
     public function index(Request $request) {

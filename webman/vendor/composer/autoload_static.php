@@ -198,6 +198,16 @@ class ComposerStaticInite4f7831017b44ad620cc38910e623b64
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'A' => 
+        array (
+            'ActiveRecord' => 
+            array (
+                0 => __DIR__ . '/..' . '/sujayjaju/php-active-record/src',
+            ),
+        ),
+    );
+
     public static $classMap = array (
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
         'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
@@ -211,6 +221,7 @@ class ComposerStaticInite4f7831017b44ad620cc38910e623b64
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInite4f7831017b44ad620cc38910e623b64::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInite4f7831017b44ad620cc38910e623b64::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInite4f7831017b44ad620cc38910e623b64::$prefixesPsr0;
             $loader->classMap = ComposerStaticInite4f7831017b44ad620cc38910e623b64::$classMap;
 
         }, null, ClassLoader::class);

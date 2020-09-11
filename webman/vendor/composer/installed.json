@@ -925,6 +925,38 @@
         ]
     },
     {
+        "name": "sujayjaju/php-active-record",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sujayjaju/php-active-record.git",
+            "reference": "b38ca8f49524330106b9b91da8d63d51e3ed2360"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/sujayjaju/php-active-record/zipball/b38ca8f49524330106b9b91da8d63d51e3ed2360",
+            "reference": "b38ca8f49524330106b9b91da8d63d51e3ed2360",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "time": "2019-05-29T12:22:40+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "ActiveRecord": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Stand Alone Active Record Library. CodeIgniter's ActiveRecord and Database Library from 3.0RC2, without the rest of CodeIgniter"
+    },
+    {
         "name": "symfony/console",
         "version": "v5.1.5",
         "version_normalized": "5.1.5.0",

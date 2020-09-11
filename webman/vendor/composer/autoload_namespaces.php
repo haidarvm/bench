@@ -6,4 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'ActiveRecord' => array($vendorDir . '/sujayjaju/php-active-record/src'),
 );

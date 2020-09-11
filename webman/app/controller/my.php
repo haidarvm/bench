@@ -4,7 +4,7 @@ namespace app\controller;
 
 use support\Request;
 use support\Db;
-
+use ActiveRecord\ActiveDatabase;
 
 class My {
     private function query($sql) {
@@ -30,6 +30,30 @@ class My {
             return json($resultArray);
         }
         return null;
+    }
+
+    public function active() {
+        // Create Database configs
+        $db_config = [
+            'hostname' => 'localhost',
+            'username' => 'root',
+            'password' => 'hai2coders',
+            'database' => 'stack',
+            'dbdriver' => 'mysqli',
+            'pconnect' => false,
+            'db_debug' => true
+        ];
+
+        // Add Config and give it a name
+        ActiveDatabase::addConfig('read', $db_config);
+        $db = ActiveDatabase::get('read');
+        //Use the named connection
+        $number = rand(1, 382745);
+        // $db->limit(1);
+        $db->join('PostsId', 'Posts.Id = PostsId.post_id', 'inner');
+        $query = $db->get_where('Posts', ['autoid' => $number]);
+        $row = $query->row();
+        return json($row);
     }
 
     public function test(Request $request) {
