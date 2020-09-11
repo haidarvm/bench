@@ -6,7 +6,6 @@ use support\Request;
 use support\Db;
 use ActiveRecord\ActiveDatabase;
 
-
 class Pg {
     private $pquery;
 
@@ -14,6 +13,16 @@ class Pg {
         // $this->pquery = $this->p_query()
     }
 
+
+    public function index(Request $request) {
+        $number = rand(1, 382745);
+        $sql = 'SELECT * FROM "Posts" p INNER JOIN "PostsId" i ON i.post_id = p."Id"  where autoid =' . $number;
+        $result = $this->p_query($sql);
+        $result = pg_fetch_all($result);
+        return json($result);
+    }
+
+    
     private function p_query($sql) {
         // $database = $db == 'NULL' ? 'news' : $db;
         $db_connection = pg_connect('host=localhost dbname=stack user=postgres password=hai2coders');
@@ -28,7 +37,7 @@ class Pg {
     public function active() {
         // Create Database configs
         $db_config = [
-            'dsn'	=> '',
+            'dsn' => '',
             'hostname' => 'localhost',
             'username' => 'postgres',
             'password' => 'hai2coders',
@@ -46,21 +55,15 @@ class Pg {
         // $db->limit(1);
         $db->join('PostsId', 'Posts.Id = PostsId.post_id', 'inner');
         $query = $db->get_where('Posts', ['autoid' => $number]);
-        $row = $query->row_array();
-        return json($row['Body']);
+        $row = $query->row();
+        // $this->gen_text('ptext.txt', json_encode($row));
+        return json($row);
     }
 
-    public function index(Request $request) {
-        $number = rand(1, 382745);
-        $sql = 'SELECT p."Body" FROM "Posts" p INNER JOIN "PostsId" i ON i.post_id = p."Id"  where autoid =' . $number;
-        $result = $this->p_query($sql);
-        if ($result) {
-            $array = array_column(pg_fetch_all($result), 'Body');
-            $resultArray = array_map('strip_tags', $array);
-            $json = json($resultArray);
-            return $json;
-        }
-        return null;
+    public function gen_text($file, $text) {
+        $txt = $text;
+        $full_path = public_path() . '/' . $file;
+        file_put_contents($full_path, $txt . PHP_EOL, FILE_APPEND);
     }
 
     public function simple(Request $request) {
