@@ -1,9 +1,10 @@
 /.idea
 /.vscode
-vendor
+vendor/
 *.log
 /logs
 /webman
+webman/*/
 .env
 composer.json
 composer.lock
