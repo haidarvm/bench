@@ -17,6 +17,7 @@ class ComposerStaticInite4f7831017b44ad620cc38910e623b64
         '60799491728b879e74601d83e38b2cad' => __DIR__ . '/..' . '/illuminate/collections/helpers.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
+        '9b552a3cc426e3287cc811caefa3cf53' => __DIR__ . '/..' . '/topthink/think-helper/src/helper.php',
         'da5b71a9ad8465d48da441e2f36823b6' => __DIR__ . '/../..' . '/support/helpers.php',
     );
 
@@ -24,6 +25,10 @@ class ComposerStaticInite4f7831017b44ad620cc38910e623b64
         'v' => 
         array (
             'voku\\' => 5,
+        ),
+        't' => 
+        array (
+            'think\\' => 6,
         ),
         'W' => 
         array (
@@ -85,6 +90,11 @@ class ComposerStaticInite4f7831017b44ad620cc38910e623b64
         'voku\\' => 
         array (
             0 => __DIR__ . '/..' . '/voku/portable-ascii/src/voku',
+        ),
+        'think\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/topthink/think-helper/src',
+            1 => __DIR__ . '/..' . '/topthink/think-orm/src',
         ),
         'Workerman\\' => 
         array (

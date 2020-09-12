@@ -3,8 +3,9 @@
 namespace app\controller;
 
 use support\Request;
-use support\Db;
+// use support\Db;
 use ActiveRecord\ActiveDatabase;
+use think\facade\Db;
 
 class Pg {
     private $pquery;
@@ -32,6 +33,16 @@ class Pg {
             return false;
         }
         return $query ;
+    }
+
+
+    public function think(Request $request) {
+        $number = rand(1, 1000);
+        // $post = Db::table('Posts')->where('Id', '<', 3)->find();
+        $post = Db::table('news')
+        // ->join('PostsId', 'PostsId.post_id = Posts.Id')
+        ->where('id', $number)->select();
+        return json($post);
     }
 
     public function active() {

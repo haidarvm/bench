@@ -3,8 +3,9 @@
 namespace app\controller;
 
 use support\Request;
-use support\Db;
+// use support\Db;
 use ActiveRecord\ActiveDatabase;
+use think\facade\Db;
 
 class My {
     private function query($sql) {
@@ -26,6 +27,25 @@ class My {
         $result = $this->query($sql);
         $array = $result->fetch_all(MYSQLI_ASSOC);
         return json($array);
+    }
+
+    public function think(Request $request) {
+        $number = rand(1, 382745);
+        $user = Db::table('Posts')
+        ->join('PostsId', 'PostsId.post_id = Posts.Id')
+        ->where('autoid', $number)->select();
+        return json($user);
+    }
+
+    public function test(Request $request) {
+        // $number = rand(1, 382745);
+        // $body = Db::table('Posts')
+        // ->join('PostsId', 'PostsId.post_id', '=', 'Posts.Id')
+        // ->where('autoid', $number)
+        // ->get();
+        // // ->value('Body');
+        // // return json(strip_tags($body));
+        // return json($body);
     }
 
     public function active() {
@@ -82,16 +102,5 @@ class My {
         $txt = $text;
         $full_path = public_path() . '/' . $file;
         file_put_contents($full_path, $txt . PHP_EOL, FILE_APPEND);
-    }
-
-    public function test(Request $request) {
-        $number = rand(1, 382745);
-        $body = Db::table('Posts')
-        ->join('PostsId', 'PostsId.post_id', '=', 'Posts.Id')
-        ->where('autoid', $number)
-        ->get();
-        // ->value('Body');
-        // return json(strip_tags($body));
-        return json($body);
     }
 }

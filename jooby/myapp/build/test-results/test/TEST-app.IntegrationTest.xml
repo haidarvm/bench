@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.IntegrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-09-12T00:51:00" hostname="haibian" time="0.185">
+  <properties/>
+  <testcase name="shouldSayHi(int)" classname="app.IntegrationTest" time="0.185"/>
+  <system-out><![CDATA[[2020-09-12 07:51:00,475]-[Test worker] INFO  app.App - App started with:
+[2020-09-12 07:51:00,482]-[Test worker] INFO  app.App -     PID: 36812
+[2020-09-12 07:51:00,485]-[Test worker] INFO  app.App -     netty {port: 8911, ioThreads: 8, workerThreads: 32, bufferSize: 16384, maxRequestSize: 10485760}
+[2020-09-12 07:51:00,486]-[Test worker] INFO  app.App -     env: [test]
+[2020-09-12 07:51:00,486]-[Test worker] INFO  app.App -     execution mode: default
+[2020-09-12 07:51:00,486]-[Test worker] INFO  app.App -     user: haidar
+[2020-09-12 07:51:00,486]-[Test worker] INFO  app.App -     app dir: /home/haidar/public_html/test/bench/jooby/myapp
+[2020-09-12 07:51:00,487]-[Test worker] INFO  app.App -     tmp dir: /home/haidar/public_html/test/bench/jooby/myapp/tmp
+[2020-09-12 07:51:00,487]-[Test worker] INFO  app.App - routes: 
+
+  GET /
+
+listening on:
+  http://localhost:8911/
+
+[2020-09-12 07:51:01,029]-[Test worker] INFO  app.App - Stopped App
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

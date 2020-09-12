@@ -8,12 +8,22 @@ class ComposerStaticInit223ad5a953ef3a7dd9167f7bdb98f06a
 {
     public static $files = array (
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
+        '9b552a3cc426e3287cc811caefa3cf53' => __DIR__ . '/..' . '/topthink/think-helper/src/helper.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        't' => 
+        array (
+            'think\\' => 6,
+        ),
         'W' => 
         array (
             'Workerman\\' => 10,
+        ),
+        'P' => 
+        array (
+            'Psr\\SimpleCache\\' => 16,
+            'Psr\\Log\\' => 8,
         ),
         'M' => 
         array (
@@ -26,9 +36,22 @@ class ComposerStaticInit223ad5a953ef3a7dd9167f7bdb98f06a
     );
 
     public static $prefixDirsPsr4 = array (
+        'think\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/topthink/think-helper/src',
+            1 => __DIR__ . '/..' . '/topthink/think-orm/src',
+        ),
         'Workerman\\' => 
         array (
             0 => __DIR__ . '/..' . '/workerman/workerman',
+        ),
+        'Psr\\SimpleCache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
         'Mark\\' => 
         array (
@@ -40,11 +63,22 @@ class ComposerStaticInit223ad5a953ef3a7dd9167f7bdb98f06a
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'A' => 
+        array (
+            'ActiveRecord' => 
+            array (
+                0 => __DIR__ . '/..' . '/sujayjaju/php-active-record/src',
+            ),
+        ),
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit223ad5a953ef3a7dd9167f7bdb98f06a::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit223ad5a953ef3a7dd9167f7bdb98f06a::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit223ad5a953ef3a7dd9167f7bdb98f06a::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }

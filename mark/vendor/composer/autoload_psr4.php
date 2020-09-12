@@ -6,7 +6,10 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'think\\' => array($vendorDir . '/topthink/think-helper/src', $vendorDir . '/topthink/think-orm/src'),
     'Workerman\\' => array($vendorDir . '/workerman/workerman'),
+    'Psr\\SimpleCache\\' => array($vendorDir . '/psr/simple-cache/src'),
+    'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'Mark\\' => array($vendorDir . '/mark-php/mark/src'),
     'FastRoute\\' => array($vendorDir . '/nikic/fast-route/src'),
 );
