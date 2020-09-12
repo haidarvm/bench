@@ -3,8 +3,8 @@
 vendor/
 *.log
 /logs
-/webman
-webman/*/
+/man
+man/*/
 .env
 composer.json
 composer.lock
