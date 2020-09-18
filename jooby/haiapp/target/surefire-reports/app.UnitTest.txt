@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: app.UnitTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.017 s <<< FAILURE! - in app.UnitTest
+app.UnitTest.welcome  Time elapsed: 0.012 s  <<< ERROR!
+java.lang.NullPointerException
+	at app.UnitTest.welcome(UnitTest.kt:13)
+

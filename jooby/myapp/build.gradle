@@ -1,13 +1,13 @@
 buildscript {
   ext {
-    kotlinVersion = "1.4.0"
+    kotlinVersion = "1.4.10"
     joobyVersion = "2.9.0"
   }
 }
 
 plugins {
   id "application"
-  id "org.jetbrains.kotlin.jvm" version "1.4.0"
+  id "org.jetbrains.kotlin.jvm" version "1.4.10"
   id "io.jooby.run" version "${joobyVersion}"
   id "io.spring.dependency-management" version "1.0.9.RELEASE"
   id "com.google.osdetector" version "1.6.2"
@@ -32,7 +32,8 @@ dependencyManagement {
 }
 
 dependencies {
-  implementation "io.jooby:jooby-netty"
+  compile 'org.nield:rxkotlin-jdbc:0.4.1'
+  implementation "io.jooby:jooby-utow"
   implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
   implementation "ch.qos.logback:logback-classic"
 
@@ -55,4 +56,5 @@ tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
 shadowJar {
   mergeServiceFiles()
 }
+
 

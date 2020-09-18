@@ -1,0 +1,29 @@
+-------------------------------------------------------------------------------
+Test set: app.IntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.183 s <<< FAILURE! - in app.IntegrationTest
+app.IntegrationTest.shouldSayHi(int)  Time elapsed: 0.234 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+expected: <Welcome to Jooby!> but was: <<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {font-family: "open sans",sans-serif; margin-left: 20px;}
+h1 {font-weight: 300; line-height: 44px; margin: 25px 0 0 0;}
+h2 {font-size: 16px;font-weight: 300; line-height: 44px; margin: 0;}
+footer {font-weight: 300; line-height: 44px; margin-top: 10px;}
+hr {background-color: #f7f7f9;}
+div.trace {border:1px solid #e1e1e8; background-color: #f7f7f9;}
+p {padding-left: 20px;}
+p.tab {padding-left: 40px;}
+</style>
+<title>Server Error (500)</title>
+<body>
+<h1>Server Error</h1>
+<hr>
+<h2>status code: 500</h2>
+</body>
+</html>>
+	at app.IntegrationTest.shouldSayHi(IntegrationTest.kt:25)
+

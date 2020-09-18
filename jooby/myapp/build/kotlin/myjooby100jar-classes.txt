@@ -1,0 +1,1 @@
+/home/haidar/public_html/test/bench/jooby/myapp/build/classes/kotlin/main/app/App$1$1.class:/home/haidar/public_html/test/bench/jooby/myapp/build/classes/kotlin/main/app/App$1.class:/home/haidar/public_html/test/bench/jooby/myapp/build/classes/kotlin/main/app/App.class:/home/haidar/public_html/test/bench/jooby/myapp/build/classes/kotlin/main/app/AppKt.class

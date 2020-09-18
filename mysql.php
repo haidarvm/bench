@@ -16,10 +16,11 @@ function gen_text($file, $text) {
 }
 
 $number = rand(1, 116193);
-$sql = "SELECT p.Body FROM Posts p INNER JOIN PostsId i ON i.post_id = p.Id  where autoid =".$number;
+$sql = "SELECT * FROM Posts p INNER JOIN PostsId i ON i.post_id = p.Id  where autoid =".$number;
 $result =  $conn->query($sql);
 $fetchall  = $result->fetch_all(MYSQLI_ASSOC);
-$array = array_column($fetchall, 'Body');
-$resultArray = array_map("strip_tags", $array);
-$json = json_encode($resultArray);
+// $array = array_column($fetchall, 'Body');
+// $resultArray = array_map("strip_tags", $array);
+$json = json_encode($fetchall);
+header('Content-Type: application/json');
 echo $json;

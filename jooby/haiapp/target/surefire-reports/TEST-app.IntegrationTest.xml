@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="app.IntegrationTest" time="1.183" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="jooby.useShutdownHook" value="false"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="jdk.extensions.version" value="14.0.2.0"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="14"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/haidar/public_html/test/bench/jooby/haiapp/target/test-classes:/home/haidar/public_html/test/bench/jooby/haiapp/target/classes:/home/haidar/.m2/repository/io/jooby/jooby-netty/2.9.0/jooby-netty-2.9.0.jar:/home/haidar/.m2/repository/io/jooby/jooby/2.9.0/jooby-2.9.0.jar:/home/haidar/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/haidar/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/home/haidar/.m2/repository/com/typesafe/config/1.4.0/config-1.4.0.jar:/home/haidar/.m2/repository/io/netty/netty-handler/4.1.50.Final/netty-handler-4.1.50.Final.jar:/home/haidar/.m2/repository/io/netty/netty-common/4.1.50.Final/netty-common-4.1.50.Final.jar:/home/haidar/.m2/repository/io/netty/netty-resolver/4.1.50.Final/netty-resolver-4.1.50.Final.jar:/home/haidar/.m2/repository/io/netty/netty-buffer/4.1.50.Final/netty-buffer-4.1.50.Final.jar:/home/haidar/.m2/repository/io/netty/netty-transport/4.1.50.Final/netty-transport-4.1.50.Final.jar:/home/haidar/.m2/repository/io/netty/netty-codec/4.1.50.Final/netty-codec-4.1.50.Final.jar:/home/haidar/.m2/repository/io/netty/netty-codec-http/4.1.50.Final/netty-codec-http-4.1.50.Final.jar:/home/haidar/.m2/repository/io/netty/netty-transport-native-epoll/4.1.50.Final/netty-transport-native-epoll-4.1.50.Final-linux-x86_64.jar:/home/haidar/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.50.Final/netty-transport-native-unix-common-4.1.50.Final.jar:/home/haidar/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.4.0/kotlin-stdlib-jdk8-1.4.0.jar:/home/haidar/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.4.0/kotlin-stdlib-1.4.0.jar:/home/haidar/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.4.0/kotlin-stdlib-common-1.4.0.jar:/home/haidar/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/home/haidar/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.4.0/kotlin-stdlib-jdk7-1.4.0.jar:/home/haidar/.m2/repository/mysql/mysql-connector-java/8.0.21/mysql-connector-java-8.0.21.jar:/home/haidar/.m2/repository/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar:/home/haidar/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/home/haidar/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/home/haidar/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/home/haidar/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar:/home/haidar/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/haidar/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/haidar/.m2/repository/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.jar:/home/haidar/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar:/home/haidar/.m2/repository/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.jar:/home/haidar/.m2/repository/io/jooby/jooby-test/2.9.0/jooby-test-2.9.0.jar:/home/haidar/.m2/repository/com/squareup/okhttp3/okhttp/4.8.1/okhttp-4.8.1.jar:/home/haidar/.m2/repository/com/squareup/okio/okio/2.7.0/okio-2.7.0.jar:"/>
+    <property name="java.vm.vendor" value="Eclipse OpenJ9"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="com.ibm.vm.bitmode" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="com.ibm.oti.vm.library.version" value="29"/>
+    <property name="java.vendor.url" value="https://adoptopenjdk.net/"/>
+    <property name="user.timezone" value="Asia/Jakarta"/>
+    <property name="io.netty.leakDetection.level" value="disabled"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="14"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/home/haidar/.sdkman/candidates/java/14.0.2.j9-adpt/lib/compressedrefs:/home/haidar/.sdkman/candidates/java/14.0.2.j9-adpt/lib"/>
+    <property name="sun.java.command" value="/home/haidar/public_html/test/bench/jooby/haiapp/target/surefire/surefirebooter14443126226763042711.jar /home/haidar/public_html/test/bench/jooby/haiapp/target/surefire 2020-09-16T17-59-20_463-jvmRun1 surefire14737112075018657728tmp surefire_09385525095014138622tmp"/>
+    <property name="application.package" value="app"/>
+    <property name="surefire.test.class.path" value="/home/haidar/public_html/test/bench/jooby/haiapp/target/test-classes:/home/haidar/public_html/test/bench/jooby/haiapp/target/classes:/home/haidar/.m2/repository/io/jooby/jooby-netty/2.9.0/jooby-netty-2.9.0.jar:/home/haidar/.m2/repository/io/jooby/jooby/2.9.0/jooby-2.9.0.jar:/home/haidar/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/haidar/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/home/haidar/.m2/repository/com/typesafe/config/1.4.0/config-1.4.0.jar:/home/haidar/.m2/repository/io/netty/netty-handler/4.1.50.Final/netty-handler-4.1.50.Final.jar:/home/haidar/.m2/repository/io/netty/netty-common/4.1.50.Final/netty-common-4.1.50.Final.jar:/home/haidar/.m2/repository/io/netty/netty-resolver/4.1.50.Final/netty-resolver-4.1.50.Final.jar:/home/haidar/.m2/repository/io/netty/netty-buffer/4.1.50.Final/netty-buffer-4.1.50.Final.jar:/home/haidar/.m2/repository/io/netty/netty-transport/4.1.50.Final/netty-transport-4.1.50.Final.jar:/home/haidar/.m2/repository/io/netty/netty-codec/4.1.50.Final/netty-codec-4.1.50.Final.jar:/home/haidar/.m2/repository/io/netty/netty-codec-http/4.1.50.Final/netty-codec-http-4.1.50.Final.jar:/home/haidar/.m2/repository/io/netty/netty-transport-native-epoll/4.1.50.Final/netty-transport-native-epoll-4.1.50.Final-linux-x86_64.jar:/home/haidar/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.50.Final/netty-transport-native-unix-common-4.1.50.Final.jar:/home/haidar/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.4.0/kotlin-stdlib-jdk8-1.4.0.jar:/home/haidar/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.4.0/kotlin-stdlib-1.4.0.jar:/home/haidar/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.4.0/kotlin-stdlib-common-1.4.0.jar:/home/haidar/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/home/haidar/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.4.0/kotlin-stdlib-jdk7-1.4.0.jar:/home/haidar/.m2/repository/mysql/mysql-connector-java/8.0.21/mysql-connector-java-8.0.21.jar:/home/haidar/.m2/repository/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar:/home/haidar/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/home/haidar/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/home/haidar/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/home/haidar/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar:/home/haidar/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/haidar/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/haidar/.m2/repository/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.jar:/home/haidar/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar:/home/haidar/.m2/repository/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.jar:/home/haidar/.m2/repository/io/jooby/jooby-test/2.9.0/jooby-test-2.9.0.jar:/home/haidar/.m2/repository/com/squareup/okhttp3/okhttp/4.8.1/okhttp-4.8.1.jar:/home/haidar/.m2/repository/com/squareup/okio/okio/2.7.0/okio-2.7.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/haidar"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-07-14"/>
+    <property name="java.home" value="/home/haidar/.sdkman/candidates/java/14.0.2.j9-adpt"/>
+    <property name="ibm.signalhandling.rs" value="false"/>
+    <property name="file.separator" value="/"/>
+    <property name="jdk.extensions.name" value="Extensions for OpenJDK for Eclipse OpenJ9"/>
+    <property name="basedir" value="/home/haidar/public_html/test/bench/jooby/haiapp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.compiler" value="j9jit29"/>
+    <property name="com.ibm.util.extralibs.properties" value=""/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="com.ibm.oti.configuration" value="scar"/>
+    <property name="java.awt.fonts" value=""/>
+    <property name="surefire.real.class.path" value="/home/haidar/public_html/test/bench/jooby/haiapp/target/surefire/surefirebooter14443126226763042711.jar"/>
+    <property name="logback.configurationFile" value="/home/haidar/public_html/test/bench/jooby/haiapp/conf/logback.xml"/>
+    <property name="com.ibm.oti.shared.enabled" value="false"/>
+    <property name="jdk.boot.class.path.append" value=""/>
+    <property name="com.ibm.oti.vm.bootstrap.library.path" value="/home/haidar/.sdkman/candidates/java/14.0.2.j9-adpt/lib/compressedrefs:/home/haidar/.sdkman/candidates/java/14.0.2.j9-adpt/lib"/>
+    <property name="com.ibm.cpu.endian" value="little"/>
+    <property name="java.fullversion" value="14.0.2+12&#10;JRE 14 Linux amd64-64-Bit Compressed References 20200715_149 (JIT enabled, AOT enabled)&#10;OpenJ9   - 34cf4c075&#10;OMR      - 113e54219&#10;JCL      - 1d231bd6a2 based on jdk-14.0.2+12"/>
+    <property name="java.runtime.version" value="14.0.2+12"/>
+    <property name="user.name" value="haidar"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.4.0-47-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="ibm.signalhandling.sigint" value="true"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="application.env" value="test"/>
+    <property name="java.vm.name" value="Eclipse OpenJ9 VM"/>
+    <property name="java.vendor.version" value="AdoptOpenJDK"/>
+    <property name="ibm.signalhandling.sigchain" value="true"/>
+    <property name="localRepository" value="/home/haidar/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/AdoptOpenJDK/openjdk-support/issues"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="14.0.2"/>
+    <property name="com.ibm.system.agent.path" value="/home/haidar/.sdkman/candidates/java/14.0.2.j9-adpt/lib"/>
+    <property name="user.dir" value="/home/haidar/public_html/test/bench/jooby/haiapp"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="PID" value="26644"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.nio.PageAlignDirectMemory" value="false"/>
+    <property name="os.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/home/haidar/.sdkman/candidates/java/14.0.2.j9-adpt/lib/compressedrefs:/home/haidar/.sdkman/candidates/java/14.0.2.j9-adpt/lib:/usr/lib64:/usr/lib"/>
+    <property name="java.vendor" value="AdoptOpenJDK"/>
+    <property name="java.vm.info" value="JRE 14 Linux amd64-64-Bit Compressed References 20200715_149 (JIT enabled, AOT enabled)&#10;OpenJ9   - 34cf4c075&#10;OMR      - 113e54219&#10;JCL      - 1d231bd6a2 based on jdk-14.0.2+12"/>
+    <property name="sun.nio.MaxDirectMemorySize" value="1783799808"/>
+    <property name="java.vm.version" value="openj9-0.21.0"/>
+    <property name="com.ibm.jcl.checkClassPath" value=""/>
+    <property name="ibm.system.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="58.0"/>
+  </properties>
+  <testcase name="shouldSayHi(int)" classname="app.IntegrationTest" time="0.234">
+    <failure type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+expected: <Welcome to Jooby!> but was: <<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+body {font-family: "open sans",sans-serif; margin-left: 20px;}
+h1 {font-weight: 300; line-height: 44px; margin: 25px 0 0 0;}
+h2 {font-size: 16px;font-weight: 300; line-height: 44px; margin: 0;}
+footer {font-weight: 300; line-height: 44px; margin-top: 10px;}
+hr {background-color: #f7f7f9;}
+div.trace {border:1px solid #e1e1e8; background-color: #f7f7f9;}
+p {padding-left: 20px;}
+p.tab {padding-left: 40px;}
+</style>
+<title>Server Error (500)</title>
+<body>
+<h1>Server Error</h1>
+<hr>
+<h2>status code: 500</h2>
+</body>
+</html>>
+	at app.IntegrationTest.shouldSayHi(IntegrationTest.kt:25)
+]]></failure>
+    <system-out><![CDATA[[2020-09-16 17:59:33,442]-[main] INFO  app.App - App started with:
+[2020-09-16 17:59:33,446]-[main] INFO  app.App -     PID: 26644
+[2020-09-16 17:59:33,446]-[main] INFO  app.App -     netty {port: 8911, ioThreads: 8, workerThreads: 32, bufferSize: 16384, maxRequestSize: 10485760}
+[2020-09-16 17:59:33,446]-[main] INFO  app.App -     env: [test]
+[2020-09-16 17:59:33,447]-[main] INFO  app.App -     execution mode: default
+[2020-09-16 17:59:33,447]-[main] INFO  app.App -     user: haidar
+[2020-09-16 17:59:33,447]-[main] INFO  app.App -     app dir: /home/haidar/public_html/test/bench/jooby/haiapp
+[2020-09-16 17:59:33,447]-[main] INFO  app.App -     tmp dir: /home/haidar/public_html/test/bench/jooby/haiapp/tmp
+[2020-09-16 17:59:33,448]-[main] INFO  app.App - routes: 
+
+  GET /
+
+listening on:
+  http://localhost:8911/
+
+[2020-09-16 17:59:33,963]-[worker-1-1] ERROR app.App - GET / 500 Server Error
+java.lang.NullPointerException: null
+	at app.App$1$1.invoke(App.kt:16)
+	at app.App$1$1.invoke(App.kt:8)
+	at io.jooby.Kooby$route$1.apply(Kooby.kt:246)
+	at io.jooby.internal.handler.SendCharSequence.apply(SendCharSequence.java:22)
+	at io.jooby.internal.handler.WorkerHandler.lambda$apply$0(WorkerHandler.java:23)
+	at io.jooby.internal.handler.WorkerHandler$$Lambda$420/0000000000000000.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:851)
+]]></system-out>
+  </testcase>
+</testsuite>
